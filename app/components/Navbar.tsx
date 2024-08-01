@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '../lib/utils';
 import Link from 'next/link';
-import { useTheme } from './ThemeProvider';
+import { useTheme } from '../context/ThemeProvider';
 
 export const Navbar = ({
   navItems,
@@ -41,7 +41,7 @@ export const Navbar = ({
       ))}
       <button
         onClick={toggleTheme}
-        className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full"
+        className="border text-sm font-medium relative border-neutral-400 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full"
       >
         {theme === 'light' ? (
           <svg
@@ -79,9 +79,9 @@ export const Navbar = ({
           </svg>
         )}
         {theme === 'light' ? (
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-black to-transparent h-px" />
+          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-black to-transparent h-[1.5px]" />
         ) : (
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-white to-transparent h-px" />
+          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-white to-transparent h-[1.5px]" />
         )}
       </button>
     </motion.div>
