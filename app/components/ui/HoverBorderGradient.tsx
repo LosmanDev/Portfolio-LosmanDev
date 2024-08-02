@@ -44,11 +44,11 @@ export function HoverBorderGradient({
         className="absolute inset-0"
         style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}
       >
-        <MovingBorder duration={duration} rx="5%" ry="5%">
+        <MovingBorder duration={duration}>
           <div
             className={cn(
-              'h-10 w-10',
-              '[background:linear-gradient(100deg,var(--blue-700)_10%,var(--indigo-300)_15%,var(--blue-500)_20%,var(--violet-200)_25%,var(--blue-400)_40%)]',
+              'h-8 w-8',
+              'bg-gradient-to-r from-[#f6b048] to-[#D3A433]',
               borderClassName,
             )}
           />
@@ -72,7 +72,7 @@ export function HoverBorderGradient({
 
 export const MovingBorder = ({
   children,
-  duration = 15000,
+  duration = 12000,
   rx,
   ry,
   ...otherProps
@@ -115,14 +115,7 @@ export const MovingBorder = ({
         height="100%"
         {...otherProps}
       >
-        <rect
-          fill="none"
-          width="100%"
-          height="100%"
-          rx={rx}
-          ry={ry}
-          ref={pathRef}
-        />
+        <rect fill="none" width="100%" height="100%" ref={pathRef} />
       </svg>
       <motion.div
         style={{

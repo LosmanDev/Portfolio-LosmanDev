@@ -5,7 +5,7 @@ import { HoverBorderGradient } from './ui/HoverBorderGradient';
 export default function Landing() {
   return (
     <>
-      <section className="text-black body-font mt-0 pt-16">
+      <section className="text-black mt-0 pt-16">
         <div className="container px-5 py-12 mx-auto flex flex-col">
           <div className="lg:w-4/6 mx-auto">
             <div className="rounded-lg overflow-hidden mb-5">
@@ -82,7 +82,7 @@ export default function Landing() {
               </div>
               <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l dark:border-white border-black sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                 <HoverBorderGradient>
-                  <p className="leading-relaxed sm:text-base font-normal text-xs mb-4 dark:text-white">
+                  <p className="leading-relaxed sm:text-base font-normal text-xs mb-4 p-4 dark:text-white">
                     I'm a highly motivated IT professional with experience in
                     both frontend and backend development. Skilled in crafting
                     user-friendly interfaces with cutting edge web technologies.
