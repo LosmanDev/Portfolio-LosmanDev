@@ -1,10 +1,10 @@
 import { ThemeProvider } from './context/ThemeProvider';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Kameron } from 'next/font/google';
 import './globals.css';
 import { AuroraBackground } from './components/ui/AuroraBackground';
 
-const inter = Inter({ subsets: ['latin'] });
+const kameron = Kameron({ subsets: ['latin'], weight: ['400', '700'] });
 
 export const metadata: Metadata = {
   title: "LosmanDev's Portfolio",
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={kameron.className}>
         <ThemeProvider>
           <AuroraBackground>{children}</AuroraBackground>
         </ThemeProvider>

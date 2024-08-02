@@ -9,7 +9,7 @@ export default function Home() {
           navItems={[
             { name: 'Home', link: '/' },
             { name: 'Projects', link: '/projects' },
-            { name: 'Contact', link: '/Contact' },
+            { name: 'Contact', link: '/contact' },
           ]}
         />
         <Landing />

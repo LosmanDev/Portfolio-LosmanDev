@@ -44,10 +44,10 @@ export function HoverBorderGradient({
         className="absolute inset-0"
         style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}
       >
-        <MovingBorder duration={duration} rx="30%" ry="30%">
+        <MovingBorder duration={duration} rx="5%" ry="5%">
           <div
             className={cn(
-              'h-20 w-20',
+              'h-10 w-10',
               '[background:linear-gradient(100deg,var(--blue-700)_10%,var(--indigo-300)_15%,var(--blue-500)_20%,var(--violet-200)_25%,var(--blue-400)_40%)]',
               borderClassName,
             )}

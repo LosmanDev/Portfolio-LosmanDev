@@ -12,9 +12,9 @@ export default function Landing() {
               <h1 className="text-3xl md:text-5xl font-bold dark:text-white text-center">
                 Full Stack Developer
               </h1>
-              <h2 className="font-medium text-base md:text-2xl dark:text-neutral-200 py-4 text-center">
+              <h2 className="font-semibold text-base md:text-2xl dark:text-neutral-200 py-4 text-center">
                 Digitalizing{' '}
-                <span className="bg-gradient-to-r from-[#f6e448] to-[#D3A433] text-transparent bg-clip-text">
+                <span className="bg-gradient-to-r from-[#f6b048] to-[#D3A433] text-transparent bg-clip-text">
                   Ideas
                 </span>
                 ✨For The Web
