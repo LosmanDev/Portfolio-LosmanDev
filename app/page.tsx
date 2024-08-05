@@ -1,10 +1,11 @@
 import Landing from './components/Landing';
 import { Navbar } from './components/Navbar';
+import { TracingBeam } from './components/ui/tracing-beam';
 
 export default function Home() {
   return (
     <>
-      <section className="min-h-screen">
+      <section className="min-h-screen dark:bg-black">
         <Navbar
           navItems={[
             { name: 'Home', link: '/' },
@@ -12,7 +13,9 @@ export default function Home() {
             { name: 'Contact', link: '/contact' },
           ]}
         />
-        <Landing />
+        <TracingBeam>
+          <Landing />
+        </TracingBeam>
       </section>
     </>
   );
