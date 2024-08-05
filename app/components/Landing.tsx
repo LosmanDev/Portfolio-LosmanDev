@@ -5,8 +5,8 @@ import { HoverBorderGradient } from './ui/HoverBorderGradient';
 export default function Landing() {
   return (
     <>
-      <section className="text-black mt-0 pt-16">
-        <div className="container px-5 py-12 mx-auto flex flex-col">
+      <section className="text-neutral-600 mt-0 pt-20 pb-24">
+        <div className="container px-5 mx-auto flex flex-col">
           <div className="lg:w-4/6 mx-auto">
             <div className="rounded-lg overflow-hidden mb-5">
               <h1 className="text-3xl md:text-5xl font-bold dark:text-white text-center">

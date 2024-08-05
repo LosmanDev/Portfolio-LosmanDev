@@ -18,10 +18,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={kameron.className}>
-      <body className={kameron.className}>
+    <html lang="en" className={`${kameron.className} h-full`}>
+      <body
+        className={`${kameron.className} flex flex-col min-h-screen m-0 p-0`}
+      >
         <ThemeProvider>
-          <AuroraBackground>{children}</AuroraBackground>
+          <AuroraBackground className="flex-grow flex flex-col">
+            <main className="flex-grow flex flex-col">{children}</main>
+          </AuroraBackground>
         </ThemeProvider>
       </body>
     </html>
