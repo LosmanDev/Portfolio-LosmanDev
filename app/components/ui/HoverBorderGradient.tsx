@@ -32,7 +32,7 @@ export function HoverBorderGradient({
   return (
     <Component
       className={cn(
-        'bg-transparent relative text-xl overflow-hidden',
+        'bg-transparent relative text-xl overflow-hidden md:mt-6',
         containerClassName,
       )}
       style={{
@@ -47,7 +47,7 @@ export function HoverBorderGradient({
         <MovingBorder duration={duration}>
           <div
             className={cn(
-              'h-8 w-8',
+              'h-10 w-4',
               'bg-gradient-to-r from-[#f6b048] to-[#D3A433]',
               borderClassName,
             )}
