@@ -2,6 +2,7 @@ import Landing from './components/Landing';
 import { Navbar } from './components/Navbar';
 import { TracingBeam } from './components/ui/tracing-beam';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
@@ -15,9 +16,10 @@ export default function Home() {
           ]}
         />
         <main className="flex-grow">
-          <TracingBeam className="h-full">
+          <TracingBeam>
             <Landing />
             <Projects />
+            <Footer />
           </TracingBeam>
         </main>
       </section>

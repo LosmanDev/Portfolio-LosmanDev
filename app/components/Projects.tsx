@@ -68,7 +68,7 @@ export default function Projects() {
           Projects
         </h1>
         <div className="w-20 h-1 dark:bg-white bg-neutral-600 rounded mt-2 mb-4"></div>
-        <div className="flex flex-row gap-3 items-center justify-center flex-wrap">
+        <div className="flex flex-row gap-16 items-center justify-center flex-wrap">
           {projects.map((project, index) => (
             <CardContainer
               key={index}

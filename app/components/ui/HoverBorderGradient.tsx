@@ -32,7 +32,7 @@ export function HoverBorderGradient({
   return (
     <Component
       className={cn(
-        'bg-transparent relative text-xl overflow-hidden md:mt-6',
+        'bg-transparent relative text-xl overflow-hidden md:mt-16',
         containerClassName,
       )}
       style={{

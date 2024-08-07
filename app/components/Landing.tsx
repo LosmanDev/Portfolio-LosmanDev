@@ -5,14 +5,14 @@ import { HoverBorderGradient } from './ui/HoverBorderGradient';
 export default function Landing() {
   return (
     <>
-      <section className="text-neutral-600 mt-0 pt-20 pb-24">
+      <section className="text-neutral-600 mt-0 pt-20 pb-5">
         <div className="container px-5 mx-auto flex flex-col">
           <div className="lg:w-4/6 mx-auto">
             <div className="rounded-lg overflow-hidden mb-5">
               <h1 className="text-3xl md:text-5xl font-bold dark:text-white text-center">
                 Liban Osman
               </h1>
-              <h2 className="font-semibold text-base md:text-2xl dark:text-neutral-200 py-4 text-center">
+              <h2 className="font-medium italic text-base md:text-xl dark:text-neutral-200 py-4 text-center">
                 Digitalizing{' '}
                 <span className="bg-gradient-to-r from-[#f6b048] to-[#D3A433] text-transparent bg-clip-text">
                   Ideas
@@ -83,6 +83,23 @@ export default function Landing() {
                           className="dark:fill-white"
                           fill="black"
                           d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm297.1 84L257.3 234.6L379.4 396h-95.6L209 298.1L123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5l78.2-89.5zm-37.8 251.6L153.4 142.9h-28.3l171.8 224.7h26.3z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      className="transition duration-300 ease-in-out transform hover:scale-150 active:scale-90"
+                      href="https://drive.google.com/file/d/1fY9heohNnm1e8ddBIPOdLmcZKfyI9-Jm/view?usp=sharing"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.8em"
+                        height="1.8em"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          className="dark:fill-white"
+                          fill="black"
+                          d="M10 10.5h1q.425 0 .713-.288T12 9.5v-1q0-.425-.288-.712T11 7.5H9.5q-.2 0-.35.15T9 8v4q0 .2.15.35t.35.15t.35-.15T10 12zm0-1v-1h1v1zm5 3q.425 0 .713-.288T16 11.5v-3q0-.425-.288-.712T15 7.5h-1.5q-.2 0-.35.15T13 8v4q0 .2.15.35t.35.15zm-1-1v-3h1v3zm4-1h.5q.2 0 .35-.15T19 10t-.15-.35t-.35-.15H18v-1h.5q.2 0 .35-.15T19 8t-.15-.35t-.35-.15h-1q-.2 0-.35.15T17 8v4q0 .2.15.35t.35.15t.35-.15T18 12zM8 18q-.825 0-1.412-.587T6 16V4q0-.825.588-1.412T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18zm-4 4q-.825 0-1.412-.587T2 20V7q0-.425.288-.712T3 6t.713.288T4 7v13h13q.425 0 .713.288T18 21t-.288.713T17 22z"
                         />
                       </svg>
                     </a>
