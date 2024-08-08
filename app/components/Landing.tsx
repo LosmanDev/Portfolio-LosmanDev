@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import liban from '../../public/assets/liban.webp';
 import { HoverBorderGradient } from './ui/HoverBorderGradient';
+import TypingEffect from './ui/typing-effect';
 
 export default function Landing() {
   return (
@@ -30,12 +31,11 @@ export default function Landing() {
                   ></Image>
                 </div>
                 <div className="flex flex-col items-center text-center justify-center">
-                  <h2 className="font-medium title-font mt-4 dark:text-white text-lg">
-                    Full Stack Developer
-                  </h2>
+                  <TypingEffect />
                   <div className="w-12 h-1 dark:bg-white bg-black rounded mt-2 mb-4"></div>
                   <div className="flex flex-row items-center gap-2">
                     <a
+                      target="_blank"
                       className="transition duration-300 ease-in-out transform hover:scale-150 active:scale-90"
                       href="https://www.linkedin.com/in/liban-osman-losmandev/"
                     >
@@ -70,6 +70,7 @@ export default function Landing() {
                       </svg>
                     </a>
                     <a
+                      target="_blank"
                       className="transition duration-300 ease-in-out transform hover:scale-150 active:scale-90"
                       href="https://x.com/LosmanDev"
                     >
@@ -87,6 +88,7 @@ export default function Landing() {
                       </svg>
                     </a>
                     <a
+                      target="_blank"
                       className="transition duration-300 ease-in-out transform hover:scale-150 active:scale-90"
                       href="https://drive.google.com/file/d/1fY9heohNnm1e8ddBIPOdLmcZKfyI9-Jm/view?usp=sharing"
                     >
